@@ -1,8 +1,11 @@
-let playerBalance = getPlayerBalanceBetweenWinsAndLosses(1000, 949);
+let playerWins = 1000;
+let playerLosses = 899
+
+let playerBalance = getPlayerBalanceBetweenWinsAndLosses(playerWins, playerLosses);
 let playerRank = getPlayerRank(playerBalance);
 
-function getPlayerBalanceBetweenWinsAndLosses(victories, defeats) {
-    balance = victories - defeats;
+function getPlayerBalanceBetweenWinsAndLosses(wins, losses) {
+    balance = wins - losses;
 
     return balance;
 }
